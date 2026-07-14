@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nova Client</string>
+    <string name="overlay_notification_title">Nova HUD Active</string>
+    <string name="overlay_notification_text">HUD overlay is running over Minecraft</string>
+    <string name="notification_channel_id">nova_overlay</string>
+    <string name="notification_channel_name">Overlay Service</string>
+</resources>
