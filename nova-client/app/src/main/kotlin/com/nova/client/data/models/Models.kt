@@ -14,12 +14,12 @@ enum class NovaTheme(val label: String) {
 // ── HUD Elements ─────────────────────────────────────────────────────────────
 enum class HudElementType(val label: String, val defaultEnabled: Boolean) {
     CPS_COUNTER("CPS Counter", true),
-    COORDINATES("Coordinates", true),
-    ARMOR_STATUS("Armor Status", true),
+    COORDINATES("Coordinates", false),   // needs Bedrock bridge - off by default
+    ARMOR_STATUS("Armor Status", false), // needs Bedrock bridge - off by default
     POTION_EFFECTS("Potion Effects", false),
-    KEYSTROKES("Keystrokes", true),
+    KEYSTROKES("Keystrokes", false),     // can't read Minecraft input - off by default
     CROSSHAIR("Crosshair", true),
-    FPS_DISPLAY("FPS Display", true),
+    FPS_DISPLAY("FPS Display", false),   // shows overlay FPS not Minecraft FPS - off by default
     CHAT_TIMESTAMPS("Chat Timestamps", false)
 }
 
