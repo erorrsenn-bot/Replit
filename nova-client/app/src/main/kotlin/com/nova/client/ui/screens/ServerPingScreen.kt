@@ -134,7 +134,7 @@ private fun ServerStatusCard(status: ServerStatus) {
                 )
             }
 
-            Divider(color = MaterialTheme.colorScheme.outline.copy(0.2f))
+            HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(0.2f))
 
             if (online) {
                 if (status.motd.isNotEmpty()) {

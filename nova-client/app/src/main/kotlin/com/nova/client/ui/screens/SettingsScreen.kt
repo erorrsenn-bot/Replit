@@ -32,10 +32,11 @@ fun SettingsScreen(viewModel: MainViewModel, onBack: () -> Unit) {
                 FeatureCard(
                     icon = Icons.Default.Camera,
                     title = "Screenshot Mode",
-                    subtitle = "Hides all HUD elements for clean screenshots",
+                    subtitle = if (config.screenshotMode) "Enabled — HUD hidden" else "Hides all HUD elements for clean screenshots",
                     enabled = config.screenshotMode,
                     tint = Color(0xFF6C63FF),
-                    onToggle = { viewModel.toggleScreenshotMode(it) }
+                    onToggle = { viewModel.toggleScreenshotMode(it) },
+                    onClick = null
                 )
             }
 

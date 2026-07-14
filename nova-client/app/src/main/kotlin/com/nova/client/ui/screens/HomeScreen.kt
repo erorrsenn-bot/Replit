@@ -176,7 +176,7 @@ private fun OverlayControlCard(
         Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(
-                    if (overlayActive) Icons.Default.LayersClear else Icons.Default.Layers,
+                    if (overlayActive) Icons.Default.StopCircle else Icons.Default.Layers,
                     contentDescription = null,
                     tint = if (overlayActive) Color(0xFF00CC66) else MaterialTheme.colorScheme.primary
                 )

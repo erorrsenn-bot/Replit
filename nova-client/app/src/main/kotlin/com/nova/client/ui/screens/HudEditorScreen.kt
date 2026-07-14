@@ -15,6 +15,7 @@ import androidx.compose.ui.*
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.*
 import com.nova.client.data.models.HudElement
@@ -35,7 +36,7 @@ fun HudEditorScreen(viewModel: MainViewModel, onBack: () -> Unit) {
                 actions = {
                     IconButton(onClick = { previewMode = !previewMode }) {
                         Icon(
-                            if (previewMode) Icons.Default.Edit else Icons.Default.Preview,
+                            if (previewMode) Icons.Default.Edit else Icons.Default.Visibility,
                             contentDescription = "Toggle preview"
                         )
                     }
