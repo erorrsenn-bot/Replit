@@ -5,44 +5,34 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Purple circle background -->
+    <!-- Outer purple circle -->
     <path
         android:fillColor="#FF6C63FF"
-        android:pathData="M54,12 A42,42 0 1,1 53.99,12 Z" />
+        android:pathData="M54,12 A42,42 0 1,1 53.999,12 Z" />
 
     <!-- Inner dark circle -->
     <path
         android:fillColor="#FF2A1F6E"
-        android:pathData="M54,18 A36,36 0 1,1 53.99,18 Z" />
+        android:pathData="M54,18 A36,36 0 1,1 53.999,18 Z" />
 
-    <!-- Letter N: Left vertical bar -->
-    <rect
+    <!-- Letter N: left vertical bar -->
+    <path
         android:fillColor="#FF00E5FF"
-        android:x="34"
-        android:y="34"
-        android:width="8"
-        android:height="40" />
+        android:pathData="M34,34 L42,34 L42,74 L34,74 Z" />
 
-    <!-- Letter N: Diagonal stroke (top-left to bottom-right, no overlap with bars) -->
+    <!-- Letter N: diagonal (top-right of left bar to bottom-left of right bar) -->
     <path
         android:fillColor="#FF00E5FF"
         android:pathData="M42,34 L50,34 L66,74 L58,74 Z" />
 
-    <!-- Letter N: Right vertical bar -->
-    <rect
+    <!-- Letter N: right vertical bar -->
+    <path
         android:fillColor="#FF00E5FF"
-        android:x="66"
-        android:y="34"
-        android:width="8"
-        android:height="40" />
+        android:pathData="M66,34 L74,34 L74,74 L66,74 Z" />
 
     <!-- Cyan underline accent -->
-    <rect
+    <path
         android:fillColor="#FF00E5FF"
-        android:x="34"
-        android:y="78"
-        android:width="40"
-        android:height="3"
-        android:rx="1.5" />
+        android:pathData="M34,78 L74,78 L74,81 L34,81 Z" />
 
 </vector>
